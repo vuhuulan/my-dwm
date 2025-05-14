@@ -60,8 +60,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *mutevol[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
-static const char *downvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0%-", "&&", "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "3%+", NULL };
-static const char *upvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0%+", "&&", "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "3%-", NULL };
+static const char *downvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "3%-", NULL };
+static const char *upvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "3%+", NULL };
 static const char *mutemic[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SOURCE@", "toggle", NULL };
 
 #include <X11/XF86keysym.h>
